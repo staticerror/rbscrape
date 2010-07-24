@@ -1,4 +1,3 @@
-
 require 'rubygems'
 require 'mechanize'
 require 'bossman' 
@@ -77,9 +76,11 @@ class Yahoo < LinkScraper
 
 end
 
-#l = LinkScraper.new
-l = Google.new "hello", 20
-puts l.getLinks
+l = Bing.new "car", 20
+links = l.getLinks
+puts links
+
+
 
 
 
